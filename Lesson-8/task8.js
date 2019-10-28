@@ -28,20 +28,20 @@ function Cat(name) {
 
     var animalFeed = this.feed;
     this.feed = function() {
-        animalFeed(); return this;
-        this.run();
+        animalFeed();
+        console.log('Кот доволен ^_^');
+        return this;
     };
-    this.run = function () {
-        console.log('Кот доволен ^_^'); return this;
-    };
+
     this.stroke = function () {
-        console.log('Гладим кота.'); return this;
+        console.log('Гладим кота.');
+        return this;
     };
 }
 
 var barsik = new Cat('Барсик');
 
-barsik.stroke().feed().run();
-barsik.run().feed().stroke();
+barsik.stroke().feed();
+barsik.feed().stroke();
 
 barsik = null;
