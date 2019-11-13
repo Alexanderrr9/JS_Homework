@@ -2,41 +2,43 @@
 var names = ['Vasy','Petya','Vova'];
 
 function showNames(v, i, a) {
-
     return {name: v};
-
 }
 
 names.map(showNames);
 
 //task_2
-var soon = new Date();
-var time = ['00', '13', '24'];
+var arr = ['00', '13', '24'];
 
-function arr(time) {
-
-    return 'Текущее время : '+ soon.toLocaleTimeString();
+function time (r,v,i,a) {
+    return r+ ' : ' +v;
 }
 
-time.reduce(arr);
+arr.reduce(time,'Текущее время');
 
 //task_3
 function vowelCount(str) {
+    var arr = ['а','е','ё','и','о','у','ы','э','ю','я'];
+    var counter = 0;
 
-    str = 'В этом тексте 6 гласных';
-    return str.replace(/[^аеёиоуыэюя]/gi, "").length;
+    for (var i = 0; i < str.length; i++) {
+        for (var a = 0; a < arr.length; a++) {
+            if (arr[a] === str[i]) {
+                counter++;
+            }
+        }
+    }
+    return counter;
+}
 
-};
-vowelCount();
+vowelCount('В этом тексте 6 гласных');
 
 //task_4
 var regular = ' Вторая запись, где! Шаблон находится? Между слешами, обрабатывает - обратные слеши. По-другому.';
 var a = regular.split(/[!?.]/gi);
 
 function showText (v,i,a) {
-
     console.log( v + ' ' + v.split(/[' ',-]/gi).join('').length );
-
 }
 
 a.forEach(showText);
