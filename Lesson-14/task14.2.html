@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="task14.2.css" rel="stylesheet">
+</head>
+<body>
+    <div class="input_x">
+        <span>X:</span>
+        <input type="text" id="inputX" onkeyup="buttonCreateKeyup();">
+    </div>
+    <div class="input_y">
+        <span>Y:</span>
+        <input type="text" id="inputY" onkeyup="buttonCreateKeyup();">
+    </div>
+    <div class="button_create">
+        <button class="buttonCreate" id = buttonCreate disabled="disabled" onclick="buttonCreateKeyup();">Create</button>
+    </div>
+    <table  class="chess_board tableBoard table">
+        <tbody class = "chessBoard tbody" id = "chessBoard">
+            <tr></tr>
+        </tbody>
+    </table>
+
+    <script src="task14.2.js"></script>
+</body>
+</html>

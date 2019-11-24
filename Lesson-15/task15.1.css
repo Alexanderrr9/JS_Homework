@@ -1,0 +1,19 @@
+table {
+	border-collapse: collapse;
+}
+.firstRowTd {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+td, th {
+	cursor: pointer;
+	padding: 5px 10px;
+	width: 180px;
+	height: 30px;
+	border: 1px solid;
+}
+input {
+	border: none;
+	height: 30px;
+}

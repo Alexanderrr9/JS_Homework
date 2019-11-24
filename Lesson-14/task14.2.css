@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+.input_x, .input_y {
+    margin: 20px;
+}
+.button_create, table {
+    margin: 0 0 20px 38px;
+}
+table {
+    border: 1px solid;
+    border-spacing: 0;
+}
+td {
+    width: 30px;
+    height: 30px;
+}
+
+.chess_board tr:nth-child(odd) td:nth-child(odd) {
+    background: black;
+}
+.chess_board tr:nth-child(even) td:nth-child(even) {
+    background: black;
+}
+
+.chessBoard1 tr:nth-child(even) td:nth-child(odd) {
+    background: black;
+}
+.chessBoard1 tr:nth-child(odd) td:nth-child(even) {
+    background: black;
+}
